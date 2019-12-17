@@ -35,7 +35,7 @@ Note: the code automatically detects GPU's and use them if available.
 - Training:     
 `python main.py --data-path <CSV_FILE_PATH> --exp-path <EXPERIMENT_FOLDER> --no-bert`
 
-- Inference: for inference pass the experiment_folder path from a previously trained experiment, and add `--eval` to avoid retraining        
+- Inference: for inference, pass the experiment_folder path from a previously trained experiment, and add `--eval` to prevent retraining        
 `python main.py --data-path <CSV_FILE_PATH> --exp-path <EXPERIMENT_FOLDER> --no-bert --eval`
 
 #### Additional parameters:
@@ -70,12 +70,10 @@ Note: the code automatically detects GPU's and use them if available.
 #### Jupyter Notebooks
 Exploration notebook contains visualisations and summary statistics about the dataset.
 
-To utilize the free GPU's on Google Colab, use nPlan_script.ipynb which contains the full script. You can also use it directly on Google Coalb from [here](https://colab.research.google.com/drive/16JYhwlVzESOGkrieie2eeHqJwHYlcqtu)
->|____notebooks     
-| |____nPlan_script.ipynb       
+>|____notebooks       
 | |____Data-Exploration.ipynb       
 | |____Data-Exploration.html        
-| |____nPlan_script.html        
+    
 
 
 
