@@ -1,0 +1,52 @@
+INFO:root:loading csv file
+INFO:root:data shape: (103976, 5)
+INFO:root:missing values: 
+text          0
+country      49
+variety       1
+points        0
+price      7247
+dtype: int64
+INFO:root:data summary: 
+          count unique                                                top   freq     mean      std  min  25%  50%  75%   max
+text     103976  97529  Cigar box, café au lait, and dried tobacco aro...      3      NaN      NaN  NaN  NaN  NaN  NaN   NaN
+country  103927     43                                                 US  43568      NaN      NaN  NaN  NaN  NaN  NaN   NaN
+variety  103975    672                                         Pinot Noir  10593      NaN      NaN  NaN  NaN  NaN  NaN   NaN
+points   103976    NaN                                                NaN    NaN  88.4527  3.03889   80   86   88   91   100
+price     96729    NaN                                                NaN    NaN  35.4501  41.1206    4   17   25   42  2500
+INFO:root:processing text features
+INFO:root:processing catergorical features
+INFO:root:processing numerical features
+INFO:plot:
+ Evaluation metrics: 
+ mse = 1019.41 
+ mae = 12.63 
+ pearson = 0.66 
+ spearman = 0.76 
+INFO:root:loading csv file
+INFO:root:data shape: (9999, 5)
+INFO:root:missing values: 
+text         0
+country      2
+variety      0
+points       0
+price      667
+dtype: int64
+INFO:root:data summary: 
+        count unique                                                top  freq     mean      std  min  25%  50%  75%  max
+text     9999   9940  Pear and peach aromas lead the nose while the ...     2      NaN      NaN  NaN  NaN  NaN  NaN  NaN
+country  9997     35                                                 US  4209      NaN      NaN  NaN  NaN  NaN  NaN  NaN
+variety  9999    342                                         Pinot Noir  1030      NaN      NaN  NaN  NaN  NaN  NaN  NaN
+points   9999    NaN                                                NaN   NaN  88.4029  3.06102   80   86   88   91  100
+price    9332    NaN                                                NaN   NaN  35.1108  35.9683    5   17   25   40  886
+INFO:root:processing text features
+INFO:root:processing catergorical features
+INFO:root:loading prefitted OneHotEncoder
+INFO:root:processing numerical features
+INFO:root:loading prefitted MinMaxScaler
+INFO:plot:
+ Evaluation metrics: 
+ mse = 660.47 
+ mae = 11.95 
+ pearson = 0.71 
+ spearman = 0.77 
