@@ -45,11 +45,6 @@ class DataProcessor:
         boolean flag, if it is False then it uses the prefitted and saved preprocessing modules (MinMaxScaler, OneHotEncoding)
 
 
-    Returns
-    -------
-    characters_in_the_scene: list
-        list of characters appear in this scene
-   
     '''
 
     def __init__(self, 
