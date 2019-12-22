@@ -1,6 +1,7 @@
 ### Modeling framework
 
-This framework was developped for nPlan ML engineering challenge. The code takes a raw csv file, summarise it, process it in a format suitable for ML algorithms then trains a neural network to regress a target variable.       
+This is a generic ML experiment framework to be used as a starting point and a baseline. The code takes a raw csv file, summarise it, process it in a format suitable for ML algorithms then trains a neural network to regress a target variable. 
+
 
 Trained model along with a performance report are stored in a separate folder for each experiment.
 
