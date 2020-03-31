@@ -32,7 +32,7 @@ from keras.callbacks import EarlyStopping, ModelCheckpoint
 from keras.optimizers import RMSprop
 
 # define base model
-def nn_model(input_dim):
+def nn_model(input_dim, output_dim):
     # create model
     model = Sequential()
     model.add(Dense(512, input_dim=input_dim, kernel_initializer='normal', activation='relu'))
@@ -40,7 +40,7 @@ def nn_model(input_dim):
     model.add(Dropout(0.3))
     model.add(Dense(4, kernel_initializer='normal', activation='relu'))
     model.add(Dropout(0.3))
-    model.add(Dense(1, kernel_initializer='normal'))
+    model.add(Dense(output_dim, kernel_initializer='normal'))
     
     # Compile model
     model.compile(loss='mean_squared_error', optimizer='adam')
@@ -49,7 +49,7 @@ def nn_model(input_dim):
 def fit_predictive_model(X_train, y_train, saving_path, epochs=300, batch_size=5000):
 
     saved_model_path = os.path.join(saving_path,'fitted_model.h5')
-    model = nn_model(input_dim= X_train.shape[1])
+    model = nn_model(input_dim= X_train.shape[1], output_dim= y_train.shape[1]))
     opt = RMSprop(lr=1e-3)
 
     if not os.path.exists(saving_path):
