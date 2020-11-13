@@ -9,4 +9,4 @@ torch==1.1.0.post2
 numpy==1.17.3
 scikit_learn==0.21.3
 textblob==0.15.3
-tensorflow==2.0.1
+tensorflow==2.3.1
